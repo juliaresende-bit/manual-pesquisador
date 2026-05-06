@@ -892,131 +892,389 @@ a:hover { color: var(--green-dark); }
     </div>
 </section>
 <section class="page" id="page-6">
-<div class="chapter-badge"><div class="chapter-badge-line"></div>Capítulo 5 · Seção 1</div>
-    <h1 class="">Guia da Aba: Seção 1</h1>
-    <p class="page-subtitle">Caracterização do Ativo — campo a campo</p>
 
-    <div class="field-card">
-      <div class="field-card-header"><span class="icon">🌱</span> O que é o ativo?</div>
-      <div class="field-card-body">
-        <p class="">Descreva o que o ativo <strong class="">será quando finalizado</strong> — não o processo de desenvolvimento nem o resultado de pesquisa. Use linguagem acessível, inclusive para quem não é especialista.</p>
-        <div class="callout exemplo">
-          <div class="callout-icon">📋</div>
-          <div class="callout-body">
-            <div class="callout-title">Exemplos</div>
-            <em class="">"Híbrido top-cross de milho de ciclo precoce, com adaptabilidade ampla para safra e safrinha, excelente desempenho em lavouras de baixo investimento e baixo custo de produção de sementes"</em><br class=""><br class="">
-            <em class="">"Insumo biológico à base de fungo entomopatogênico para controle da lagarta-do-cartucho em milho"</em>
+<div class="chapter-badge hover-edit" data-edit-id="element-266"><div class="chapter-badge-line hover-edit" data-edit-id="element-267"></div>Capítulo 5 · Seção 1</div>
+    <h1 class="hover-edit" data-edit-id="element-268">Guia da Aba: Seção 1</h1>
+    <p class="page-subtitle hover-edit" data-edit-id="element-269">Caracterização do Ativo — campo a campo</p>
+
+    <div class="field-card hover-edit" data-edit-id="element-270">
+      <div class="field-card-header hover-edit" data-edit-id="element-271"><span class="icon hover-edit" data-edit-id="element-272">🌱</span> O que é o ativo?</div>
+      <div class="field-card-body hover-edit" data-edit-id="element-273">
+        <p class="hover-edit" data-edit-id="element-274">Descreva o que o ativo <strong class="hover-edit" data-edit-id="element-275">será quando finalizado</strong> — não o processo de desenvolvimento nem o resultado de pesquisa. Use linguagem acessível, inclusive para quem não é especialista.</p>
+        <div class="callout exemplo hover-edit" data-edit-id="element-276">
+          <div class="callout-icon hover-edit" data-edit-id="element-277">📋</div>
+          <div class="hover-edit hover-edit hover-edit hover-edit hover-edit hover-edit callout-body hover-edit" data-edit-id="element-278">
+            <div class="callout-title hover-edit" data-edit-id="element-279">Exemplos</div>
+            <em class="hover-edit" data-edit-id="element-280">"Híbrido top-cross de milho de ciclo precoce, com adaptabilidade ampla para safra e safrinha, excelente desempenho em lavouras de baixo investimento e baixo custo de produção de sementes"</em><br class="hover-edit" data-edit-id="element-281"><br class="hover-edit" data-edit-id="element-282">
+            <em class="hover-edit" data-edit-id="element-283">"Insumo biológico à base de fungo entomopatogênico para controle da lagarta-do-cartucho em milho"</em>
+<br class="hover-edit" data-edit-id="element-281"><br class="hover-edit" data-edit-id="element-282">
+ <em class="hover-edit" data-edit-id="element-283">"O ativo é um insumo biológico, composto por “x”, com função de controle da “lagarta” em “soja""</em>
           </div>
         </div>
-        <div class="callout atencao">
-          <div class="callout-icon">⚠️</div>
-          <div class="callout-body"><div class="callout-title">Atenção</div>Não repita o nome do ativo nem insira resultados de projetos associados.</div>
+        <div class="callout atencao hover-edit" data-edit-id="element-284">
+          <div class="callout-icon hover-edit" data-edit-id="element-285">⚠️</div>
+          <div class="callout-body hover-edit" data-edit-id="element-286"><div class="callout-title hover-edit" data-edit-id="element-287">Atenção</div>Não repita o nome do ativo nem insira resultados de projetos associados.</div>
         </div>
-        <div class="callout dica">
-          <div class="callout-icon">🌽</div>
-          <div class="callout-body">
-            <div class="callout-title">Para cultivares — inclua minimamente</div>
-            Nome comum da espécie · tipo de cruzamento · ciclo · adaptabilidade e estabilidade produtiva · épocas de plantio · território de recomendação · público-alvo (alto ou baixo nível tecnológico) · tolerâncias a estresses bióticos e abióticos · desempenho para a indústria de sementes · traits especiais, se houver.<br class=""><br class="">
-            <strong class="">Para TRL 6 ou superior:</strong> finalize com a ficha técnica completa (genética, ciclo, florescimento, altura, resistência a doenças, produtividade esperada etc.). Veja modelo no campo da planilha.
-          </div>
+        <div class="callout dica hover-edit" data-edit-id="element-288">
+          <div class="callout-icon hover-edit" data-edit-id="element-289">🌽</div>
+          <div class="hover-edit hover-edit hover-edit hover-edit hover-edit hover-edit callout-body hover-edit" data-edit-id="element-290"><!-- =====================================================
+     BLOCO: Para Cultivares — Ficha Técnica
+     Cole este trecho no lugar do bloco antigo da seção
+     de cultivares no seu arquivo HTML principal.
+     ===================================================== -->
+ 
+<style>
+  .ficha-section {
+    border: 0.5px solid #d0cfc7;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+  .ficha-sub-header {
+    background: #f5f5f0;
+    color: #888780;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 7px 14px;
+    border-bottom: 0.5px solid #d0cfc7;
+  }
+  .ficha-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .ficha-row {
+    display: flex;
+    flex-direction: column;
+    padding: 9px 14px;
+    border-bottom: 0.5px solid #d0cfc7;
+    border-right: 0.5px solid #d0cfc7;
+  }
+  .ficha-label {
+    font-size: 11px;
+    color: #888780;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 3px;
+  }
+  .ficha-value {
+    font-size: 13px;
+    color: #2c2c2a;
+    font-weight: 500;
+  }
+  .ficha-value.placeholder {
+    color: #b4b2a9;
+    font-style: italic;
+    font-weight: 400;
+  }
+  .doencas-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  .doencas-table th {
+    background: #f5f5f0;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #888780;
+    padding: 8px 14px;
+    text-align: left;
+    border-bottom: 0.5px solid #d0cfc7;
+  }
+  .doencas-table td {
+    padding: 8px 14px;
+    border-bottom: 0.5px solid #d0cfc7;
+    color: #2c2c2a;
+  }
+  .doencas-table tr:last-child td {
+    border-bottom: none;
+  }
+  .badge {
+    display: inline-block;
+    padding: 2px 9px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .badge-mr { background: #EAF3DE; color: #3B6D11; }
+  .badge-ms { background: #FAEEDA; color: #854F0B; }
+  .badge-r  { background: #E1F5EE; color: #0F6E56; }
+  .badge-s  { background: #FCEBEB; color: #A32D2D; }
+</style>
+ 
+<!-- Cabeçalho informativo da seção -->
+<div style="border-left: 4px solid #1a5c3a; padding: 10px 16px; margin-bottom: 1.25rem; background: #f0f5eb; border-radius: 0 8px 8px 0;">
+  <p style="font-size: 12px; font-weight: 700; color: #1a5c3a; margin: 0 0 6px; text-transform: uppercase; letter-spacing: 0.05em;">
+    Para cultivares — inclua minimamente
+  </p>
+  <p style="font-size: 13px; color: #2c2c2a; margin: 0; line-height: 1.7;">
+    Nome comum da espécie · tipo de cruzamento · ciclo · adaptabilidade e estabilidade produtiva · épocas de plantio · território de recomendação · público-alvo (alto ou baixo nível tecnológico) · tolerâncias a estresses bióticos e abióticos · desempenho para a indústria de sementes · traits especiais, se houver.
+  </p>
+  <p style="font-size: 13px; color: #2c2c2a; margin: 8px 0 0; line-height: 1.7;">
+    <strong>Para TRL 6 ou superior:</strong> finalize com a ficha técnica completa (genética, ciclo, florescimento, altura, resistência a doenças, produtividade esperada etc.). Você pode inserir a resistência a doenças da forma como preferir, seja em quadro ou textual.
+  </p>
+</div>
+ 
+<!-- Ficha técnica completa -->
+<div class="ficha-section">
+ 
+  <!-- Cabeçalho principal da ficha -->
+  <div style="background: #1a5c3a; color: #fff; padding: 9px 16px; font-size: 13px; font-weight: 600; letter-spacing: 0.03em;">
+    Ficha técnica — exemplo preenchido
+  </div>
+ 
+  <!-- Bloco 1: Identificação e genética -->
+  <div class="ficha-sub-header">Identificação e genética</div>
+  <div class="ficha-grid">
+    <div class="ficha-row">
+      <span class="ficha-label">Genética</span>
+      <span class="ficha-value">Convencional / Transgênico</span>
+    </div>
+    <div class="ficha-row">
+      <span class="ficha-label">Tipo de cruzamento</span>
+      <span class="ficha-value">Ex: híbrido top-cross, variedade, híbrido simples, triplo, duplo</span>
+    </div>
+    <div class="ficha-row">
+      <span class="ficha-label">Ciclo</span>
+      <span class="ficha-value">Ex: precoce / normal</span>
+    </div>
+    <div class="ficha-row">
+      <span class="ficha-label">Uso</span>
+      <span class="ficha-value">Ex: grãos</span>
+    </div>
+    <div class="ficha-row">
+      <span class="ficha-label">Época de plantio</span>
+      <span class="ficha-value">Safra e/ou safrinha</span>
+    </div>
+    <div class="ficha-row">
+      <span class="ficha-label">Nível de investimento</span>
+      <span class="ficha-value">Ex: baixo / médio</span>
+    </div>
+  </div>
+ 
+  <!-- Bloco 2: Fenologia -->
+  <div class="ficha-sub-header" style="border-top: 0.5px solid #d0cfc7;">Fenologia</div>
+  <div class="ficha-grid">
+    <div class="ficha-row">
+      <span class="ficha-label">Florescimento feminino</span>
+      <span class="ficha-value"> X dias do plantio</span>
+    </div>
+    <div class="ficha-row">
+      <span class="ficha-label">Florescimento masculino</span>
+      <span class="ficha-value"> X dias do plantio</span>
+    </div>
+    <div class="ficha-row">
+      <span class="ficha-label">Empalhamento</span>
+      <span class="ficha-value">Ex: médio</span>
+    </div>
+  </div>
+ 
+  <!-- Bloco 3: Morfologia -->
+  <div class="ficha-sub-header" style="border-top: 0.5px solid #d0cfc7;">Morfologia da planta e espiga</div>
+  <div class="ficha-grid">
+    <div class="ficha-row">
+      <span class="ficha-label">Altura da planta</span>
+      <span class="ficha-value">X cm</span>
+    </div>
+    <div class="ficha-row">
+      <span class="ficha-label">Altura da espiga</span>
+      <span class="ficha-value">X cm</span>
+    </div>
+    <div class="ficha-row">
+      <span class="ficha-label">Comprimento médio da espiga</span>
+      <span class="ficha-value">X cm</span>
+    </div>
+    <div class="ficha-row">
+      <span class="ficha-label">Diâmetro médio da espiga</span>
+      <span class="ficha-value">X cm</span>
+    </div>
+    <div class="ficha-row">
+      <span class="ficha-label">Fileiras de grãos</span>
+      <span class="ficha-value">X fileiras</span>
+    </div>
+    <div class="ficha-row">
+      <span class="ficha-label">Textura do grão</span>
+      <span class="ficha-value">Ex: semidentado</span>
+    </div>
+    <div class="ficha-row">
+      <span class="ficha-label">Cor do grão</span>
+      <span class="ficha-value">Ex: amarelo / alaranjado</span>
+    </div>
+    <div class="ficha-row">
+      <span class="ficha-label">Resistência ao acamamento</span>
+      <span class="ficha-value">Ex: alta</span>
+    </div>
+  </div>
+ 
+  <!-- Bloco 4: Dados industriais -->
+  <div class="ficha-sub-header" style="border-top: 0.5px solid #d0cfc7;">Dados industriais e produtividade</div>
+  <div class="ficha-grid">
+    <div class="ficha-row">
+      <span class="ficha-label">Peso hectolítrico</span>
+      <span class="ficha-value">X g/L</span>
+    </div>
+    <div class="ficha-row">
+      <span class="ficha-label">Peso de 1000 sementes</span>
+      <span class="ficha-value">X g</span>
+    </div>
+    <div class="ficha-row">
+      <span class="ficha-label">Densidade de plantio — safrinha</span>
+      <span class="ficha-value">X mil plantas/ha</span>
+    </div>
+    <div class="ficha-row">
+      <span class="ficha-label">Produtividade esperada</span>
+      <span class="ficha-value">X kg/ha (média em xx ambientes)</span>
+    </div>
+  </div>
+ 
+  <!-- Bloco 5: Resistência a doenças -->
+  <div class="ficha-sub-header" style="border-top: 0.5px solid #d0cfc7;">Resistência a doenças</div>
+  <table class="doencas-table">
+    <thead>
+      <tr>
+        <th>Doença</th>
+        <th>Grau de resistência</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Diplodia</td>
+        <td><span class="badge badge-mr">Moderadamente resistente</span></td>
+      </tr>
+      <tr>
+        <td>Cercosporiose</td>
+        <td><span class="badge badge-mr">Moderadamente resistente</span></td>
+      </tr>
+      <tr>
+        <td>Mancha de Turcicum</td>
+        <td><span class="badge badge-ms">Moderadamente suscetível</span></td>
+      </tr>
+      <tr>
+        <td>Complexo Enfezamento do milho "Corn stunt"</td>
+        <td><span class="badge badge-ms">Moderadamente suscetível</span></td>
+      </tr>
+      <tr>
+        <td>Mancha de Bipolaris</td>
+        <td><span class="badge badge-ms">Moderadamente suscetível</span></td>
+      </tr>
+      <tr>
+        <td>Ferrugem Polissora</td>
+        <td><span class="badge badge-ms">Moderadamente suscetível</span></td>
+      </tr>
+      <tr>
+        <td>Mancha branca</td>
+        <td><span class="badge badge-ms">Moderadamente suscetível</span></td>
+      </tr>
+      <tr>
+        <td>Ferrugem branca</td>
+        <td><span class="badge badge-ms">Moderadamente suscetível</span></td>
+      </tr>
+    </tbody>
+  </table>
+ 
+</div>
+<!-- FIM DO BLOCO: Para Cultivares — Ficha Técnica --></div>
         </div>
       </div>
     </div>
 
-    <div class="field-card">
-      <div class="field-card-header"><span class="icon">🎯</span> Qual a principal aplicação do ativo?</div>
-      <div class="field-card-body">
-        <p class="">Descreva <strong class="">para quem</strong> e <strong class="">como</strong> o ativo será usado na cadeia produtiva. Destaque o diferencial em relação às soluções existentes no mercado, quando houver.</p>
-        <div class="callout exemplo">
-          <div class="callout-icon">📋</div>
-          <div class="callout-body">
-            <div class="callout-title">Exemplos</div>
-            <em class="">"Destinado a produtores de milho safrinha no Brasil Central com médio nível tecnológico, com custo de semente inferior aos híbridos simples e potencial produtivo superior às variedades de polinização aberta"</em><br class=""><br class="">
-            <em class="">"Voltado para a indústria de sementes, com parentais de alto vigor que reduzem o custo de produção de sementes híbridas"</em>
+    <div class="field-card hover-edit" data-edit-id="element-295">
+      <div class="field-card-header hover-edit" data-edit-id="element-296"><span class="icon hover-edit" data-edit-id="element-297">🎯</span> Qual a principal aplicação do ativo?</div>
+      <div class="field-card-body hover-edit" data-edit-id="element-298">
+        <p class="hover-edit" data-edit-id="element-299">Descreva <strong class="hover-edit" data-edit-id="element-300">para quem</strong> e <strong class="hover-edit" data-edit-id="element-301">como</strong> o ativo será usado na cadeia produtiva. Destaque o diferencial em relação às soluções existentes no mercado, quando houver.</p>
+        <div class="callout exemplo hover-edit" data-edit-id="element-302">
+          <div class="callout-icon hover-edit" data-edit-id="element-303">📋</div>
+          <div class="callout-body hover-edit" data-edit-id="element-304">
+            <div class="callout-title hover-edit" data-edit-id="element-305">Exemplos</div>
+            <em class="hover-edit" data-edit-id="element-306">"Destinado a produtores de milho safrinha no Brasil Central com médio nível tecnológico, com custo de semente inferior aos híbridos simples e potencial produtivo superior às variedades de polinização aberta"</em><br class="hover-edit" data-edit-id="element-307"><br class="hover-edit" data-edit-id="element-308">
+            <em class="hover-edit" data-edit-id="element-309">"Voltado para a indústria de sementes, com parentais de alto vigor que reduzem o custo de produção de sementes híbridas"</em>
           </div>
         </div>
-        <div class="callout dica">
-          <div class="callout-icon">💡</div>
-          <div class="callout-body">Informações aprofundadas sobre mercado, TRL/MRL, validação e parcerias devem ser inseridas nos campos específicos — não aqui.</div>
+        <div class="callout dica hover-edit" data-edit-id="element-310">
+          <div class="callout-icon hover-edit" data-edit-id="element-311">💡</div>
+          <div class="callout-body hover-edit" data-edit-id="element-312">Informações aprofundadas sobre mercado, TRL/MRL, validação e parcerias devem ser inseridas nos campos específicos — não aqui.</div>
         </div>
       </div>
     </div>
 
-    <div class="field-card">
-      <div class="field-card-header"><span class="icon">🔍</span> Quais problemas o ativo pretende resolver?</div>
-      <div class="field-card-body">
-        <p class="">Descreva o que motivou o desenvolvimento do ativo e qual <strong class="">dor do cliente</strong> ele resolve. Use dados de impacto técnico, econômico, social ou ambiental quando disponíveis.</p>
-        <div class="callout atencao">
-          <div class="callout-icon">⚠️</div>
-          <div class="callout-body"><div class="callout-title">Atenção</div>Não descreva como o ativo resolve o problema — o foco aqui é a <strong class="">justificativa da demanda</strong>.</div>
+    <div class="field-card hover-edit" data-edit-id="element-313">
+      <div class="field-card-header hover-edit" data-edit-id="element-314"><span class="icon hover-edit" data-edit-id="element-315">🔍</span> Quais problemas o ativo pretende resolver?</div>
+      <div class="field-card-body hover-edit" data-edit-id="element-316">
+        <p class="hover-edit" data-edit-id="element-317">Descreva o que motivou o desenvolvimento do ativo e qual <strong class="hover-edit" data-edit-id="element-318">dor do cliente</strong> ele resolve. Use dados de impacto técnico, econômico, social ou ambiental quando disponíveis.</p>
+        <div class="callout atencao hover-edit" data-edit-id="element-319">
+          <div class="callout-icon hover-edit" data-edit-id="element-320">⚠️</div>
+          <div class="callout-body hover-edit" data-edit-id="element-321"><div class="callout-title hover-edit" data-edit-id="element-322">Atenção</div>Não descreva como o ativo resolve o problema — o foco aqui é a <strong class="hover-edit" data-edit-id="element-323">justificativa da demanda</strong>.</div>
         </div>
-        <div class="callout exemplo">
-          <div class="callout-icon">📋</div>
-          <div class="callout-body">
-            <div class="callout-title">Exemplos</div>
-            <em class="">"O enfezamento do milho causa perdas de até [x]% na safrinha do Brasil Central. Os híbridos disponíveis apresentam baixa tolerância à doença e o controle químico do vetor tem eficiência limitada"</em><br class=""><br class="">
-            <em class="">"A lagarta-do-cartucho é responsável por perdas estimadas em R$ bilhões/ano no milho brasileiro. O controle predominantemente químico eleva custos, gera risco de resistência e enfrenta restrições crescentes em mercados exportadores"</em>
+        <div class="callout exemplo hover-edit" data-edit-id="element-324">
+          <div class="callout-icon hover-edit" data-edit-id="element-325">📋</div>
+          <div class="callout-body hover-edit" data-edit-id="element-326">
+            <div class="callout-title hover-edit" data-edit-id="element-327">Exemplos</div>
+            <em class="hover-edit" data-edit-id="element-328">"O enfezamento do milho causa perdas de até [x]% na safrinha do Brasil Central. Os híbridos disponíveis apresentam baixa tolerância à doença e o controle químico do vetor tem eficiência limitada"</em><br class="hover-edit" data-edit-id="element-329"><br class="hover-edit" data-edit-id="element-330">
+            <em class="hover-edit" data-edit-id="element-331">"A lagarta-do-cartucho é responsável por perdas estimadas em R$ bilhões/ano no milho brasileiro. O controle predominantemente químico eleva custos, gera risco de resistência e enfrenta restrições crescentes em mercados exportadores"</em>
           </div>
         </div>
-        <div class="callout dica">
-          <div class="callout-icon">💡</div>
-          <div class="callout-body">Se o problema está relacionado ao Desafio de Inovação ao qual o projeto foi alinhado, utilize-o como referência.</div>
+        <div class="callout dica hover-edit" data-edit-id="element-332">
+          <div class="callout-icon hover-edit" data-edit-id="element-333">💡</div>
+          <div class="callout-body hover-edit" data-edit-id="element-334">Se o problema está relacionado ao Desafio de Inovação ao qual o projeto foi alinhado, utilize-o como referência.</div>
         </div>
       </div>
     </div>
 
-    <div class="field-card">
-      <div class="field-card-header"><span class="icon">💡</span> O que o ativo oferece de inovador?</div>
-      <div class="field-card-body">
-        <p class="">Descreva os <strong class="">diferenciais concretos</strong> do ativo em relação às soluções disponíveis — em desempenho técnico, custo, qualidade, sustentabilidade ou experiência do usuário. Sempre que possível, <strong class="">quantifique</strong> os diferenciais com dados comparativos.</p>
-        <div class="callout exemplo">
-          <div class="callout-icon">📋</div>
-          <div class="callout-body">
-            <div class="callout-title">Exemplos</div>
-            <em class="">"Produtividade [x]% superior à média dos híbridos comerciais de referência em ambientes de baixa disponibilidade hídrica"</em><br class=""><br class="">
-            <em class="">"Resistência múltipla a [doença x] e [doença y], eliminando a necessidade de aplicações fungicidas específicas e reduzindo o custo de produção em até [x]%"</em>
+    <div class="field-card hover-edit" data-edit-id="element-335">
+      <div class="field-card-header hover-edit" data-edit-id="element-336"><span class="icon hover-edit" data-edit-id="element-337">💡</span> O que o ativo oferece de inovador?</div>
+      <div class="field-card-body hover-edit" data-edit-id="element-338">
+        <p class="hover-edit" data-edit-id="element-339">Descreva os <strong class="hover-edit" data-edit-id="element-340">diferenciais concretos</strong> do ativo em relação às soluções disponíveis — em desempenho técnico, custo, qualidade, sustentabilidade ou experiência do usuário. Sempre que possível, <strong class="hover-edit" data-edit-id="element-341">quantifique</strong> os diferenciais com dados comparativos.</p>
+        <div class="callout exemplo hover-edit" data-edit-id="element-342">
+          <div class="callout-icon hover-edit" data-edit-id="element-343">📋</div>
+          <div class="callout-body hover-edit" data-edit-id="element-344">
+            <div class="callout-title hover-edit" data-edit-id="element-345">Exemplos</div>
+            <em class="hover-edit" data-edit-id="element-346">"Produtividade [x]% superior à média dos híbridos comerciais de referência em ambientes de baixa disponibilidade hídrica"</em><br class="hover-edit" data-edit-id="element-347"><br class="hover-edit" data-edit-id="element-348">
+            <em class="hover-edit" data-edit-id="element-349">"Resistência múltipla a [doença x] e [doença y], eliminando a necessidade de aplicações fungicidas específicas e reduzindo o custo de produção em até [x]%"</em>
           </div>
         </div>
-        <div class="callout dica">
-          <div class="callout-icon">💡</div>
-          <div class="callout-body">Uma forma prática de identificar diferenciais é comparar os <strong class="">CTAs</strong> (Coeficientes Técnicos Atuais) alcançados com os <strong class="">CTRs</strong> (Coeficientes Técnicos de Referência) definidos no início do projeto.</div>
+        <div class="callout dica hover-edit" data-edit-id="element-350">
+          <div class="callout-icon hover-edit" data-edit-id="element-351">💡</div>
+          <div class="callout-body hover-edit" data-edit-id="element-352">Uma forma prática de identificar diferenciais é comparar os <strong class="hover-edit" data-edit-id="element-353">CTAs</strong> (Coeficientes Técnicos Atuais) alcançados com os <strong class="hover-edit" data-edit-id="element-354">CTRs</strong> (Coeficientes Técnicos de Referência) definidos no início do projeto.</div>
         </div>
       </div>
     </div>
 
-    <div class="field-card">
-      <div class="field-card-header"><span class="icon">🔀</span> Outros campos da Seção 1</div>
-      <div class="field-card-body">
-        <h3 class="">Existem outros usos para o ativo?</h3>
-        <p class="">Liste aplicações alternativas ao uso principal — em outras culturas, espécies, regiões ou segmentos industriais. Não é necessário que esses usos já tenham sido validados.</p>
+    <div class="field-card hover-edit" data-edit-id="element-355">
+      <div class="field-card-header hover-edit" data-edit-id="element-356"><span class="icon hover-edit" data-edit-id="element-357">🔀</span> Outros campos da Seção 1</div>
+      <div class="field-card-body hover-edit" data-edit-id="element-358">
+        <h3 class="hover-edit" data-edit-id="element-359">Existem outros usos para o ativo?</h3>
+        <p class="hover-edit" data-edit-id="element-360">Liste aplicações alternativas ao uso principal — em outras culturas, espécies, regiões ou segmentos industriais. Não é necessário que esses usos já tenham sido validados.</p>
 
-        <h3 class="">Quais as outras soluções existentes para resolver esse problema?</h3>
-        <p class="">Indique as principais soluções que você já conhece. Não é necessário aprofundamento — este campo <strong class="">orienta a análise de concorrência</strong> que será realizada em detalhe pelo qualificador.</p>
-        <div class="callout dica">
-          <div class="callout-icon">💡</div>
-          <div class="callout-body">Quando souber, cite nomes comerciais ou instituições responsáveis — isso facilita muito o trabalho do qualificador.</div>
+        <h3 class="hover-edit" data-edit-id="element-361">Quais as outras soluções existentes para resolver esse problema?</h3>
+        <p class="hover-edit" data-edit-id="element-362">Indique as principais soluções que você já conhece. Não é necessário aprofundamento — este campo <strong class="hover-edit" data-edit-id="element-363">orienta a análise de concorrência</strong> que será realizada em detalhe pelo qualificador.</p>
+        <div class="callout dica hover-edit" data-edit-id="element-364">
+          <div class="callout-icon hover-edit" data-edit-id="element-365">💡</div>
+          <div class="callout-body hover-edit" data-edit-id="element-366">Quando souber, cite nomes comerciais ou instituições responsáveis — isso facilita muito o trabalho do qualificador.</div>
         </div>
 
-        <h3 class="">Resultados de projetos associados</h3>
-        <p class="">Informe os resultados de pesquisa que <strong class="">compõem</strong> o ativo — do mesmo projeto ou de projetos anteriores, inclusive encerrados. Use também este campo para qualificações em grupo (ex.: 3 linhagens de sorgo para co-híbridos qualificadas como um único ativo).</p>
-        <div class="callout atencao">
-          <div class="callout-icon">⚠️</div>
-          <div class="callout-body">Não inclua resultados que apenas se relacionam com o ativo sem compô-lo diretamente. Não repita o próprio resultado vinculado.</div>
+        <h3 class="hover-edit" data-edit-id="element-367">Resultados de projetos associados</h3>
+        <p class="hover-edit" data-edit-id="element-368">Informe os resultados de pesquisa que <strong class="hover-edit" data-edit-id="element-369">compõem</strong> o ativo — do mesmo projeto ou de projetos anteriores, inclusive encerrados. Use também este campo para qualificações em grupo (ex.: 3 linhagens de sorgo para co-híbridos qualificadas como um único ativo).</p>
+        <div class="callout atencao hover-edit" data-edit-id="element-370">
+          <div class="callout-icon hover-edit" data-edit-id="element-371">⚠️</div>
+          <div class="callout-body hover-edit" data-edit-id="element-372">Não inclua resultados que apenas se relacionam com o ativo sem compô-lo diretamente. Não repita o próprio resultado vinculado.</div>
         </div>
 
-        <h3 class="">Outras UDs da Embrapa envolvidas / Países, Regiões e Biomas</h3>
-        <p class="">Informe as UDs que participaram do desenvolvimento (exceto a sua) e indique onde o ativo foi ou será validado. Seja preciso — essas informações norteiam os esforços de posicionamento e facilitam a busca pelo ativo no Gestec.</p>
-        <div class="callout dica">
-          <div class="callout-icon">🌽</div>
-          <div class="callout-body">Para cultivares em TRL 6–9, verifique o formulário de registro da cultivar pela lista de melhoristas e suas UDs de vinculação.</div>
+        <h3 class="hover-edit" data-edit-id="element-373">Outras UDs da Embrapa envolvidas / Países, Regiões e Biomas</h3>
+        <p class="hover-edit" data-edit-id="element-374">Informe as UDs que participaram do desenvolvimento (exceto a sua) e indique onde o ativo foi ou será validado. Seja preciso — essas informações norteiam os esforços de posicionamento e facilitam a busca pelo ativo no Gestec.</p>
+        <div class="callout dica hover-edit" data-edit-id="element-375">
+          <div class="callout-icon hover-edit" data-edit-id="element-376">🌽</div>
+          <div class="callout-body hover-edit" data-edit-id="element-377">Para cultivares em TRL 6–9, verifique o formulário de registro da cultivar pela lista de melhoristas e suas UDs de vinculação.</div>
         </div>
       </div>
     </div>
 
-    <div class="page-nav">
-      <button class="btn btn-secondary" onclick="goTo(5)">← Anterior</button>
-      <div class="nav-center"><span class="page-indicator">Capítulo 5a de 7</span></div>
-      <button class="btn btn-primary" onclick="goTo(7)">Próximo →</button>
+    <div class="page-nav hover-edit" data-edit-id="element-378">
+      <button class="btn btn-secondary hover-edit" onclick="goTo(5)" data-edit-id="element-379">← Anterior</button>
+      <div class="nav-center hover-edit" data-edit-id="element-380"><span class="page-indicator hover-edit" data-edit-id="element-381">Capítulo 5a de 7</span></div>
+      <button class="btn btn-primary hover-edit" onclick="goTo(7)" data-edit-id="element-382">Próximo →</button>
     </div>
 </section>
 <section class="page" id="page-7">
