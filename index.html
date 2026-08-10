@@ -608,10 +608,72 @@ tr:nth-child(even) td { background: var(--green-ultra); }
 
 a { color: var(--green-mid); }
 a:hover { color: var(--green-dark); }
+/* ===== RESPONSIVIDADE MOBILE ===== */
 
+/* Botão de menu escondido por padrão */
+.mobile-menu-toggle {
+    display: none;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 100;
+    background: var(--green-light);
+    color: var(--green-dark);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+    .mobile-menu-toggle { display: block; }
+
+    .app { flex-direction: column; }
+
+    /* Sidebar vira um menu flutuante */
+    .sidebar {
+        position: fixed;
+        left: -100%; /* Esconde a barra */
+        top: 0;
+        bottom: 0;
+        width: 80% !important;
+        transition: 0.3s;
+        z-index: 99;
+    }
+
+    /* Quando o menu está aberto */
+    .sidebar.open {
+        left: 0;
+    }
+
+    .main {
+        padding: 60px 15px 30px; /* Mais espaço no topo para o botão */
+        width: 100vw;
+    }
+
+    /* Ajuste da Capa */
+    .cover h1 { font-size: 32px !important; }
+    .cover { padding: 40px 20px; }
+
+    /* Transforma grids de 2 ou 3 colunas em 1 coluna */
+    .toc-grid, .infobox, .comparison, .infobox {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Ajuste de tabelas */
+    table { font-size: 13px; }
+    th, td { padding: 10px 8px; }
+
+    /* Elementos visuais */
+    .chapter-badge { font-size: 10px; }
+    .page h1 { font-size: 26px; }
+}
 </style>
 </head>
 <body>
+  <!-- Botão para abrir menu no mobile -->
+<button class="mobile-menu-toggle" onclick="toggleSidebar()">☰ Menu</button>
 <div class="app">
 
   <!-- SIDEBAR -->
@@ -1553,7 +1615,19 @@ function updateProgress() {
 
 buildSidebar();
 updateProgress();
+// Função para abrir/fechar menu no mobile
+function toggleSidebar() {
+  document.querySelector('.sidebar').classList.toggle('open');
+}
 
+// Modifique sua função goTo antiga para fechar o menu ao clicar em um item
+const originalGoTo = goTo;
+goTo = function(n) {
+  originalGoTo(n);
+  if (window.innerWidth <= 768) {
+    document.querySelector('.sidebar').classList.remove('open');
+  }
+};
 </script>
 </body>
 </html>
