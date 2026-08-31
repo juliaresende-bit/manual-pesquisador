@@ -1273,8 +1273,19 @@ a:hover { color: var(--green-dark); }
     <div class="field-card">
       <div class="field-card-header"><span class="icon">✅</span> Resultados e Discussão (contempla também validação técnica e mercadológica)</div>
       <div class="field-card-body">
-        <p class=""><strong class="">Obrigatório:</strong> apresentar análise estatística, além de tabelas e/ou figuras para as variáveis relacionadas ao CTA, quando aplicável. Descreva os principais resultados obtidos e as evidências de validação técnica e mercadológica do ativo, considerando o estágio atual de maturidade tecnológica (TRL/MRL). Na validação técnica, informe: os ambientes e condições de validação realizados até o momento (laboratório, campo experimental, ambiente operacional etc.); regiões/localidades (municípios onde foram feitos testes/experimentos) e parceiros envolvidos; resultados alcançados e desempenho do ativo; os Coeficientes Técnicos de Referência (CTR) — parâmetros mínimos de competitividade identificados no estado da arte — e os Coeficientes Técnicos Atuais (CTA) efetivamente obtidos pelo ativo, indicando claramente quais foram atingidos, parcialmente atingidos ou não atingidos.</p>
         
+        <!-- NOVO CALLOUT PARA CULTIVARES -->
+        <div class="callout importante" style="border-left-color: var(--green-mid); background-color: var(--green-ultra);">
+          <div class="callout-icon">🌾</div>
+          <div class="callout-body">
+            <div class="callout-title" style="color: var(--green-dark);">Atenção: Seu ativo é uma CULTIVAR?</div>
+            <p style="margin-bottom: 0; font-size: 14px;">Se você está declarando o alcance de resultado de uma <strong>cultivar</strong>, o preenchimento deste campo deve ser obrigatoriamente mais detalhado, contemplando dados sobre <strong>estande, altura de plantas, ciclo, florescimento, reação a pragas/doenças e produtividade</strong>.</p>
+            <p style="margin-top: 8px; margin-bottom: 0; font-size: 14px;">Essas informações são exigidas pelo <strong>GT Pipeline</strong>, subsidiam decisões de registro e proteção e fazem parte do novo ciclo de aprovação da Unidade. <strong>Confira as orientações detalhadas na próxima aba (5b.1 Resultado de cultivares).</strong></p>
+          </div>
+        </div>
+
+        <p class=""><strong class="">Obrigatório:</strong> apresentar análise estatística, além de tabelas e/ou figuras para as variáveis relacionadas ao CTA, quando aplicável. Descreva os principais resultados obtidos e as evidências de validação técnica e mercadológica do ativo, considerando o estágio atual de maturidade tecnológica (TRL/MRL). Na validação técnica, informe: os ambientes e condições de validação realizados até o momento (laboratório, campo experimental, ambiente operacional etc.); regiões/localidades (municípios onde foram feitos testes/experimentos) e parceiros envolvidos; resultados alcançados e desempenho do ativo; os Coeficientes Técnicos de Referência (CTR) — parâmetros mínimos de competitividade identificados no estado da arte — e os Coeficientes Técnicos Atuais (CTA) efetivamente obtidos pelo ativo, indicando claramente quais foram atingidos, parcialmente atingidos ou não atingidos.</p>
+      
         <div class="table-wrap">
           <table class="">
             <tbody class=""><tr class=""><th class="">Estágio</th><th class="">O que se espera</th></tr>
@@ -1423,11 +1434,21 @@ a:hover { color: var(--green-dark); }
     <div class="field-card">
         <div class="field-card-header"><span class="icon">📄</span> 1. Introdução</div>
         <div class="field-card-body">
-            <p>A caracterização detalhada qualifica o ativo, apoia a recomendação de uso e subsidia decisões de registro e proteção. Esta ficha deve ser entregue junto ao formulário de <strong>VCU do RNC/MAPA</strong>.</p>
+            <p>A caracterização detalhada das cultivares é importante para qualificar o ativo, apoiar sua recomendação de uso e subsidiar decisões de registro, proteção e transferência de tecnologia. Essas informações passam a integrar também o novo ciclo de aprovação de cultivares na Unidade, ampliando a caracterização dos materiais para além das exigências mínimas do registro. Esta ficha deve ser entregue junto ao formulário de <strong>VCU do RNC/MAPA</strong>.</p>
             <div class="callout dica">
                 <div class="callout-icon">💡</div>
                 <div class="callout-body">Contemple: finalidade (grãos, silagem, energia), épocas (1ª, 2ª ou 3ª safra) e características relevantes (estande, altura, ciclo, pragas, produtividade).</div>
             </div>
+          <p>
+  Caso haja limitações de recursos, capacidade operacional ou outras condições que impeçam a avaliação adequada de itens importantes, recomenda-se:
+</p>
+
+<ul>
+  <li>Prorrogar o ano de alcance do resultado na TRL 7;</li>
+  <li>Reduzir a quantidade de cultivares previstas nos projetos e passíveis de registro, permitindo que a Unidade caracterize adequadamente os materiais e amplie a qualidade dos ensaios;</li>
+  <li>Prever e/ou aditar parcerias e/ou remanejar orçamento para contratação de ensaios de pós-melhoramento e mão de obra, especialmente em projetos de co-desenvolvimento;</li>
+  <li>Submeter casos específicos à análise da Chefia, desde que não se tornem rotina da Unidade.</li>
+</ul>
         </div>
     </div>
 
@@ -1452,24 +1473,56 @@ a:hover { color: var(--green-dark); }
         <div class="accordion-header" onclick="toggleCultivarAccordion(this)">
             3.1 Características Agronômicas <span>▼</span>
         </div>
-        <div class="accordion-content">
-            <div class="cultivar-grid">
-                <div class="inner-card">
-                    <h4><span class="icon">📏</span> Altura e Ciclo</h4>
-                    <ul class="check-list">
-                        <li>Altura média (cm) na 1ª e 2ª safra.</li>
-                        <li>Florescimento (dias para 50% das plantas).</li>
-                        <li>Ciclo em GDD (Graus-dia) e classificação (Precoce, Médio, etc).</li>
-                    </ul>
-                </div>
-                <div class="inner-card">
-                    <h4><span class="icon">⚠️</span> Comportamento</h4>
-                    <ul class="check-list">
-                        <li>Reação ao acamamento e tombamento (%).</li>
-                        <li>Sensibilidade ao fotoperíodo (específico para Sorgo).</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="cultivar-grid" style="grid-template-columns: 1fr;">
+    <!-- BLOCO: ALTURA DE PLANTAS -->
+    <div class="inner-card" style="margin-bottom: 15px; border-left: 4px solid var(--green-light);">
+        <h4><span class="icon">📏</span> Altura de Plantas</h4>
+        <p style="font-size: 14px; color: var(--text-mid);">Informar a altura média (cm). Havendo diferenças relevantes entre locais ou condições de cultivo, estas devem ser apresentadas e discutidas.</p>
+        <ul class="check-list">
+            <li><strong>Altura de plantas – safra (cm)</strong></li>
+            <li><strong>Altura de plantas – 2ª safra (cm)</strong></li>
+        </ul>
+    </div>
+
+    <!-- BLOCO: ACAMAMENTO E TOMBAMENTO -->
+    <div class="inner-card" style="margin-bottom: 15px; border-left: 4px solid var(--green-light);">
+        <h4><span class="icon">📉</span> Acamamento e Tombamento</h4>
+        <p style="font-size: 14px; color: var(--text-mid);">Classificar a reação considerando a comparação com as testemunhas e média dos ensaios. Indicar o critério (Resistente, Tolerante ou Suscetível). Destacar comportamento por situação/local quando aplicável.</p>
+        <ul class="check-list">
+            <li><strong>Acamamento/tombamento – safra</strong></li>
+            <li><strong>Acamamento/tombamento – 2ª safra</strong></li>
+            <li><strong>% de plantas acamadas e quebradas (por parcela ou hectare)</strong></li>
+        </ul>
+    </div>
+
+    <!-- BLOCO: SENSIBILIDADE AO FOTOPERÍODO -->
+    <div class="inner-card" style="margin-bottom: 15px; border-left: 4px solid var(--amber); background-color: var(--amber-light);">
+        <h4><span class="icon">☀️</span> Sensibilidade ao Fotoperíodo – Sorgo</h4>
+        <p style="font-size: 14px; color: var(--text-mid);">Para cultivares de <strong>sorgo</strong>, informar se é sensível ou insensível, considerando safra, 2ª safra e comportamento em diferentes locais.</p>
+    </div>
+
+    <!-- BLOCO: FLORESCIMENTO -->
+    <div class="inner-card" style="margin-bottom: 15px; border-left: 4px solid var(--green-light);">
+        <h4><span class="icon">🌸</span> Florescimento Masculino e Feminino</h4>
+        <p style="font-size: 14px; color: var(--text-mid);">Número de dias entre o plantio e o florescimento de 50% das plantas (Safra, 2ª safra e por local).</p>
+        <ul class="check-list">
+            <li><strong>Florescimento masculino (dias)</strong></li>
+            <li><strong>Florescimento feminino (dias)</strong></li>
+            <li><strong>Metodologia:</strong> Descrever a metodologia de avaliação adotada pela Embrapa.</li>
+        </ul>
+    </div>
+
+    <!-- BLOCO: CICLO DA CULTIVAR -->
+    <div class="inner-card" style="margin-bottom: 5px; border-left: 4px solid var(--green-light);">
+        <h4><span class="icon">🔄</span> Ciclo da Cultivar</h4>
+        <p style="font-size: 14px; color: var(--text-mid);">Informar o ciclo médio em graus-dia (GDD) e classificar. Se já classificado na "Descrição do Ativo", use este espaço para apresentar os dados experimentais que sustentam a classificação.</p>
+        <ul class="check-list">
+            <li><strong>Classificação:</strong> Superprecoce, Precoce, Médio ou Tardio.</li>
+            <li><strong>Ciclo médio em graus-dia (GDD)</strong>, quando disponível.</li>
+            <li><strong>Metodologia:</strong> Dias do plantio até a colheita (aprox. 15% de umidade dos grãos), conforme metodologia Embrapa.</li>
+        </ul>
+    </div>
+</div>
         </div>
     </div>
 
@@ -1559,22 +1612,22 @@ a:hover { color: var(--green-dark); }
     </div>
 
     <div class="page-nav">
-      <button class="btn btn-secondary" onclick="goTo(7)">← Anterior</button>
+      <button class="btn btn-secondary" onclick="goTo(6)">← Anterior</button>
       <div class="nav-center"><span class="page-indicator">Página 9 de 11</span></div>
-      <button class="btn btn-primary" onclick="goTo(9)">Próximo →</button>
+      <button class="btn btn-primary" onclick="goTo(8)">Próximo →</button>
     </div>
 </section>
     <section class="page" id="page-9">
 <div class="chapter-badge"><div class="chapter-badge-line"></div>Capítulo 5</div>
 <h1>Fluxo de Finalização e Envio</h1>
-<p class="page-subtitle">O que fazer ao concluir o preenchimento das suas abas</p>
+<p class="page-subtitle">O que fazer ao concluir o preenchimento da sua aba</p>
 
 <div class="step-list">
   <div class="step-item">
     <div class="step-num">1</div>
     <div class="step-content">
       <strong>Qualificador e pesquisador notificam o gestor de ativos</strong>
-      <p>Ao concluir o preenchimento das suas respectivas abas, tanto o qualificador quanto o pesquisador devem avisar o gestor de ativos da UD — por e-mail de preferência (julia.resende@embrapa.com.br). Não é necessário nenhum procedimento especial para salvar a planilha — basta fechar o arquivo.</p>
+      <p>Ao concluir o preenchimento da sua aba, avise o gestor de ativos da UD — por e-mail de preferência (julia.resende@embrapa.com.br). Não é necessário nenhum procedimento especial para salvar a planilha — basta fechar o arquivo.</p>
     </div>
   </div>
   <div class="step-item">
@@ -1588,7 +1641,7 @@ a:hover { color: var(--green-dark); }
     <div class="step-num">3</div>
     <div class="step-content">
       <strong>Exportação do PDF e envio ao pesquisador</strong>
-      <p>Após validação, o gestor irá exportar a planilha em PDF e enviar ao líder técnico/pesquisador responsável pelo ativo, que usará tal documento como comprovante de entrega da qualificação.</p>
+      <p>Após validação, o gestor irá exportar a planilha em PDF e enviar ao responsável técnico pelo ativo, que usará tal documento como comprovante de entrega da qualificação.</p>
     </div>
   </div>
   <div class="step-item">
@@ -1604,7 +1657,7 @@ a:hover { color: var(--green-dark); }
   <div class="callout-icon">⚠️</div>
   <div class="callout-body">
     <div class="callout-title">Atenção</div>
-    A inserção no Gestec é de <strong>responsabilidade exclusiva do gestor de ativos da UD</strong> — qualificador e pesquisador não precisam realizar nenhuma ação direta nesta etapa. Apenas prestar algum auxílio, se for o caso.
+    A inserção no Gestec é de <strong>responsabilidade exclusiva do gestor de ativos da UD</strong> — qualificador e pesquisador não precisam se preocupar com isso, ou realizar nenhuma ação direta nesta etapa. Apenas prestar algum auxílio, se for o caso.
   </div>
 </div>
 
@@ -1640,7 +1693,7 @@ a:hover { color: var(--green-dark); }
         </tr>
         <tr class="">
           <td class="">Propriedade Intelectual</td>
-          <td class=""><strong class="">Fernanda de Almeida</strong><br class="">CLPI da unidade</td>
+          <td class=""><strong class="">Fernanda de Almeida e Matheus Liduino </strong><br class="">CLPI da unidade</td>
         </tr>
         <tr class="">
           <td class="">Aspectos regulatórios (patrimônio genético, biossegurança etc.)</td>
@@ -1648,7 +1701,7 @@ a:hover { color: var(--green-dark); }
         </tr>
         <tr class="">
           <td class="">Portfólio e pipeline de cultivares</td>
-          <td class=""><strong class="">GT Pipeline Genética Vegetal</strong></td>
+          <td class=""><strong class="">Sara Rios</strong><br class="">CLPI da unidade</td>
         </tr>
         <tr class="">
           <td class="">Inserção posterior no Gestec</td>
