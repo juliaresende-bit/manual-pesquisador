@@ -1442,16 +1442,7 @@ a:hover { color: var(--green-dark); }
                 <div class="callout-icon">💡</div>
                 <div class="callout-body">Contemple: finalidade (grãos, silagem, energia), épocas (1ª, 2ª ou 3ª safra) e características relevantes (estande, altura, ciclo, pragas, produtividade).</div>
             </div>
-          <p>
-  Caso haja limitações de recursos, capacidade operacional ou outras condições que impeçam a avaliação adequada de itens importantes, recomenda-se:
-</p>
-
-<ul>
-  <li>Prorrogar o ano de alcance do resultado na TRL 7;</li>
-  <li>Reduzir a quantidade de cultivares previstas nos projetos e passíveis de registro, permitindo que a Unidade caracterize adequadamente os materiais e amplie a qualidade dos ensaios;</li>
-  <li>Prever e/ou aditar parcerias e/ou remanejar orçamento para contratação de ensaios de pós-melhoramento e mão de obra, especialmente em projetos de co-desenvolvimento;</li>
-  <li>Submeter casos específicos à análise da Chefia, desde que não se tornem rotina da Unidade.</li>
-</ul>
+          <p>Caso haja limitações de recursos, recomenda-se: prorrogar o ano de alcance (TRL 7), reduzir a quantidade de cultivares, prever parcerias para ensaios ou submeter à Chefia.</p>
         </div>
     </div>
 
@@ -1476,58 +1467,56 @@ a:hover { color: var(--green-dark); }
         <div class="accordion-header" onclick="toggleCultivarAccordion(this)">
             3.1 Características Agronômicas <span>▼</span>
         </div>
-        <div class="cultivar-grid" style="grid-template-columns: 1fr;">
-    <!-- BLOCO: ALTURA DE PLANTAS -->
-    <div class="inner-card" style="margin-bottom: 15px; border-left: 4px solid var(--green-light);">
-        <h4><span class="icon">📏</span> Altura de Plantas</h4>
-        <p style="font-size: 14px; color: var(--text-mid);">Informar a altura média (cm). Havendo diferenças relevantes entre locais ou condições de cultivo, estas devem ser apresentadas e discutidas.</p>
-        <ul class="check-list">
-            <li><strong>Altura de plantas – safra (cm)</strong></li>
-            <li><strong>Altura de plantas – 2ª safra (cm)</strong></li>
-        </ul>
-    </div>
+        <div class="accordion-content"> <!-- CORREÇÃO: Adicionado o wrapper aqui -->
+            <div class="cultivar-grid" style="grid-template-columns: 1fr;">
+                <!-- BLOCO: ALTURA DE PLANTAS -->
+                <div class="inner-card" style="margin-bottom: 15px; border-left: 4px solid var(--green-light);">
+                    <h4><span class="icon">📏</span> Altura de Plantas</h4>
+                    <p style="font-size: 14px; color: var(--text-mid);">Informar a altura média (cm). Havendo diferenças relevantes entre locais ou condições de cultivo, estas devem ser discutidas.</p>
+                    <ul class="check-list">
+                        <li><strong>Altura de plantas – safra (cm)</strong></li>
+                        <li><strong>Altura de plantas – 2ª safra (cm)</strong></li>
+                    </ul>
+                </div>
 
-    <!-- BLOCO: ACAMAMENTO E TOMBAMENTO -->
-    <div class="inner-card" style="margin-bottom: 15px; border-left: 4px solid var(--green-light);">
-        <h4><span class="icon">📉</span> Acamamento e Tombamento</h4>
-        <p style="font-size: 14px; color: var(--text-mid);">Classificar a reação considerando a comparação com as testemunhas e média dos ensaios. Indicar o critério (Resistente, Tolerante ou Suscetível). Destacar comportamento por situação/local quando aplicável.</p>
-        <ul class="check-list">
-            <li><strong>Acamamento/tombamento – safra</strong></li>
-            <li><strong>Acamamento/tombamento – 2ª safra</strong></li>
-            <li><strong>% de plantas acamadas e quebradas (por parcela ou hectare)</strong></li>
-        </ul>
-    </div>
+                <!-- BLOCO: ACAMAMENTO E TOMBAMENTO -->
+                <div class="inner-card" style="margin-bottom: 15px; border-left: 4px solid var(--green-light);">
+                    <h4><span class="icon">📉</span> Acamamento e Tombamento</h4>
+                    <p style="font-size: 14px; color: var(--text-mid);">Classificar a reação comparando com testemunhas. Indicar o critério (Resistente, Tolerante ou Suscetível).</p>
+                    <ul class="check-list">
+                        <li><strong>Acamamento/tombamento – safra e 2ª safra</strong></li>
+                        <li><strong>% de plantas acamadas e quebradas</strong></li>
+                    </ul>
+                </div>
 
-    <!-- BLOCO: SENSIBILIDADE AO FOTOPERÍODO -->
-    <div class="inner-card" style="margin-bottom: 15px; border-left: 4px solid var(--amber); background-color: var(--amber-light);">
-        <h4><span class="icon">☀️</span> Sensibilidade ao Fotoperíodo – Sorgo</h4>
-        <p style="font-size: 14px; color: var(--text-mid);">Para cultivares de <strong>sorgo</strong>, informar se é sensível ou insensível, considerando safra, 2ª safra e comportamento em diferentes locais.</p>
-    </div>
+                <!-- BLOCO: SENSIBILIDADE AO FOTOPERÍODO -->
+                <div class="inner-card" style="margin-bottom: 15px; border-left: 4px solid var(--amber); background-color: var(--amber-light);">
+                    <h4><span class="icon">☀️</span> Sensibilidade ao Fotoperíodo – Sorgo</h4>
+                    <p style="font-size: 14px; color: var(--text-mid);">Para cultivares de <strong>sorgo</strong>, informar se é sensível ou insensível em diferentes safras/locais.</p>
+                </div>
 
-    <!-- BLOCO: FLORESCIMENTO -->
-    <div class="inner-card" style="margin-bottom: 15px; border-left: 4px solid var(--green-light);">
-        <h4><span class="icon">🌸</span> Florescimento Masculino e Feminino</h4>
-        <p style="font-size: 14px; color: var(--text-mid);">Número de dias entre o plantio e o florescimento de 50% das plantas (Safra, 2ª safra e por local).</p>
-        <ul class="check-list">
-            <li><strong>Florescimento masculino (dias)</strong></li>
-            <li><strong>Florescimento feminino (dias)</strong></li>
-            <li><strong>Metodologia:</strong> Descrever a metodologia de avaliação adotada pela Embrapa.</li>
-        </ul>
-    </div>
+                <!-- BLOCO: FLORESCIMENTO -->
+                <div class="inner-card" style="margin-bottom: 15px; border-left: 4px solid var(--green-light);">
+                    <h4><span class="icon">🌸</span> Florescimento Masculino e Feminino</h4>
+                    <p style="font-size: 14px; color: var(--text-mid);">Dias entre o plantio e o florescimento de 50% das plantas.</p>
+                    <ul class="check-list">
+                        <li><strong>Florescimento masculino e feminino (dias)</strong></li>
+                        <li><strong>Metodologia:</strong> Descrever a metodologia Embrapa utilizada.</li>
+                    </ul>
+                </div>
 
-    <!-- BLOCO: CICLO DA CULTIVAR -->
-    <div class="inner-card" style="margin-bottom: 5px; border-left: 4px solid var(--green-light);">
-        <h4><span class="icon">🔄</span> Ciclo da Cultivar</h4>
-        <p style="font-size: 14px; color: var(--text-mid);">Informar o ciclo médio em graus-dia (GDD) e classificar. Se já classificado na "Descrição do Ativo", use este espaço para apresentar os dados experimentais que sustentam a classificação.</p>
-        <ul class="check-list">
-            <li><strong>Classificação:</strong> Superprecoce, Precoce, Médio ou Tardio.</li>
-            <li><strong>Ciclo médio em graus-dia (GDD)</strong>, quando disponível.</li>
-            <li><strong>Metodologia:</strong> Dias do plantio até a colheita (aprox. 15% de umidade dos grãos), conforme metodologia Embrapa.</li>
-        </ul>
-    </div>
-</div>
-        </div>
-    </div>
+                <!-- BLOCO: CICLO DA CULTIVAR -->
+                <div class="inner-card" style="margin-bottom: 5px; border-left: 4px solid var(--green-light);">
+                    <h4><span class="icon">🔄</span> Ciclo da Cultivar</h4>
+                    <p style="font-size: 14px; color: var(--text-mid);">Informar ciclo em GDD e classificar (Superprecoce, Precoce, Médio ou Tardio).</p>
+                    <ul class="check-list">
+                        <li><strong>Dados experimentais que sustentem a classificação.</strong></li>
+                        <li><strong>Metodologia:</strong> Dias até colheita (15% umidade), conforme Embrapa.</li>
+                    </ul>
+                </div>
+            </div>
+        </div> <!-- CORREÇÃO: Fechamento do content -->
+    </div> <!-- CORREÇÃO: Fechamento do accordion -->
 
     <div class="cultivar-accordion">
         <div class="accordion-header" onclick="toggleCultivarAccordion(this)">
@@ -1615,9 +1604,9 @@ a:hover { color: var(--green-dark); }
     </div>
 
     <div class="page-nav">
-      <button class="btn btn-secondary" onclick="goTo(6)">← Anterior</button>
+      <button class="btn btn-secondary" onclick="goTo(7)">← Anterior</button>
       <div class="nav-center"><span class="page-indicator">Página 9 de 11</span></div>
-      <button class="btn btn-primary" onclick="goTo(8)">Próximo →</button>
+      <button class="btn btn-primary" onclick="goTo(9)">Próximo →</button>
     </div>
 </section>
     <section class="page" id="page-9">
