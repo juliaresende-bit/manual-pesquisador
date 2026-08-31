@@ -757,13 +757,20 @@ a:hover { color: var(--green-dark); }
         </div>
       </div>
       <div class="toc-card" onclick="goTo(8)">
+  <div class="toc-num">5b.1</div>
+  <div class="toc-info">
+    <div class="toc-title">Resultado de Cultivares</div>
+    <div class="toc-desc">Orientações específicas para resultados e discussão de cultivares</div>
+  </div>
+</div>
+      <div class="toc-card" onclick="goTo(9)">
         <div class="toc-num">6</div>
         <div class="toc-info">
           <div class="toc-title">Fluxo de Finalização</div>
           <div class="toc-desc">Como concluir, salvar e notificar os envolvidos</div>
         </div>
       </div>
-      <div class="toc-card" onclick="goTo(9)">
+      <div class="toc-card" onclick="goTo(10)">
         <div class="toc-num">7</div>
         <div class="toc-info">
           <div class="toc-title">Contatos e Suporte</div>
@@ -1344,7 +1351,279 @@ a:hover { color: var(--green-dark); }
       </div>
     </div>
 </section>
-<section class="page" id="page-9">
+<!-- PÁGINA 5b.1 - RESULTADO DE CULTIVARES -->
+<section class="page" id="page-8">
+    <style>
+        /* Estilos específicos para componentes de cultivares */
+        .cultivar-accordion {
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            margin-bottom: 12px;
+            background: var(--white);
+            overflow: hidden;
+        }
+        .accordion-header {
+            padding: 15px 20px;
+            background: var(--green-ultra);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--green-dark);
+            transition: background 0.2s;
+        }
+        .accordion-header:hover { background: var(--green-pale); }
+        .accordion-header.active { background: var(--green-dark); color: white; }
+        .accordion-content {
+            display: none;
+            padding: 20px;
+            border-top: 1px solid var(--border);
+        }
+        .cultivar-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .inner-card {
+            background: #fdfdfd;
+            border: 1px solid #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .inner-card h4 {
+            color: var(--green-mid);
+            margin-bottom: 10px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .check-list { list-style: none; padding: 0; }
+        .check-list li {
+            font-size: 14px;
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+        .check-list li::before {
+            content: "•";
+            color: var(--green-light);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+    </style>
+
+    <div class="chapter-badge"><div class="chapter-badge-line"></div>Capítulo 5 · Seção 2.1</div>
+    <h1>Resultado de Cultivares</h1>
+    <p class="page-subtitle">Orientações específicas para caracterização, resultados e discussão de cultivares.</p>
+
+    <!-- 1. INTRODUÇÃO -->
+    <div class="field-card">
+        <div class="field-card-header"><span class="icon">📄</span> 1. Introdução</div>
+        <div class="field-card-body">
+            <p>A caracterização detalhada qualifica o ativo, apoia a recomendação de uso e subsidia decisões de registro e proteção. Esta ficha deve ser entregue junto ao formulário de <strong>VCU do RNC/MAPA</strong>.</p>
+            <div class="callout dica">
+                <div class="callout-icon">💡</div>
+                <div class="callout-body">Contemple: finalidade (grãos, silagem, energia), épocas (1ª, 2ª ou 3ª safra) e características relevantes (estande, altura, ciclo, pragas, produtividade).</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. PROTEÇÃO INTELECTUAL -->
+    <div class="field-card">
+        <div class="field-card-header"><span class="icon">🛡️</span> 2. Aspectos de Proteção Intelectual</div>
+        <div class="field-card-body">
+            <ul class="rules-list">
+                <li>Variedades: Proteção <strong>obrigatória</strong>.</li>
+                <li>Híbridos: Obrigatória a proteção de pelo menos um progenitor.</li>
+                <li>Sorgo: Registro autorizado apenas com protocolo de proteção das linhagens R e B.</li>
+                <li>O melhorista deve indicar o progenitor a ser protegido via e-mail ao CLPI.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 3. RESULTADOS E DISCUSSÃO -->
+    <h2>3. Orientações para "Resultados e Discussão"</h2>
+    <p>Destaque diferenças entre safras, locais e o posicionamento do material.</p>
+
+    <div class="cultivar-accordion">
+        <div class="accordion-header" onclick="toggleCultivarAccordion(this)">
+            3.1 Características Agronômicas <span>▼</span>
+        </div>
+        <div class="accordion-content">
+            <div class="cultivar-grid">
+                <div class="inner-card">
+                    <h4><span class="icon">📏</span> Altura e Ciclo</h4>
+                    <ul class="check-list">
+                        <li>Altura média (cm) na 1ª e 2ª safra.</li>
+                        <li>Florescimento (dias para 50% das plantas).</li>
+                        <li>Ciclo em GDD (Graus-dia) e classificação (Precoce, Médio, etc).</li>
+                    </ul>
+                </div>
+                <div class="inner-card">
+                    <h4><span class="icon">⚠️</span> Comportamento</h4>
+                    <ul class="check-list">
+                        <li>Reação ao acamamento e tombamento (%).</li>
+                        <li>Sensibilidade ao fotoperíodo (específico para Sorgo).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cultivar-accordion">
+        <div class="accordion-header" onclick="toggleCultivarAccordion(this)">
+            3.2 População e Produção de Forragem <span>▼</span>
+        </div>
+        <div class="accordion-content">
+            <ul class="check-list">
+                <li><strong>Estande:</strong> População recomendada por hectare para cada safra e local.</li>
+                <li><strong>Rebrota:</strong> Obrigatório para forrageiras informar o potencial (Safra/2ª Safra).</li>
+                <li><strong>Produtivo:</strong> Massa verde e matéria seca em kg/ha.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cultivar-accordion">
+        <div class="accordion-header" onclick="toggleCultivarAccordion(this)">
+            3.3 Reação a Pragas, Doenças e Adversidades <span>▼</span>
+        </div>
+        <div class="accordion-content">
+            <p>Apresentar a reação (Resistente, Tolerante, Suscetível, etc.) acompanhada da metodologia Embrapa.</p>
+            <div class="cultivar-grid">
+                <div class="inner-card">
+                    <h4><span class="icon">🐛</span> Pragas e Doenças</h4>
+                    <p style="font-size:13px">Spodoptera, Diatraea e doenças conforme tabela complementar do manual.</p>
+                </div>
+                <div class="inner-card">
+                    <h4><span class="icon">❄️</span> Estresses e Pesticidas</h4>
+                    <p style="font-size:13px">Seca, salinidade, alumínio, frio e reação a herbicidas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cultivar-accordion">
+        <div class="accordion-header" onclick="toggleCultivarAccordion(this)">
+            3.4 Época de Plantio e Produtividade <span>▼</span>
+        </div>
+        <div class="accordion-content">
+            <ul class="check-list">
+                <li><strong>Época:</strong> Indicação clara (Safra, 2ª Safra ou ambas).</li>
+                <li><strong>Produtividade:</strong> Kg/ha com grãos corrigidos para 13% de umidade.</li>
+                <li><strong>Performance:</strong> Comparação com testemunhas e estabilidade.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 4. FINALIDADE -->
+    <div class="cultivar-accordion" style="margin-top:20px;">
+        <div class="accordion-header" onclick="toggleCultivarAccordion(this)">
+            4. Avaliações Complementares por Finalidade <span>▼</span>
+        </div>
+        <div class="accordion-content">
+            <div class="cultivar-grid">
+                <div class="inner-card">
+                    <h4>Granífero</h4>
+                    <p style="font-size:13px">Atributos para alimentação humana ou bioetanol.</p>
+                </div>
+                <div class="inner-card">
+                    <h4>Forrageiro (Silagem/Corte)</h4>
+                    <ul class="check-list" style="font-size:12px">
+                        <li>Matéria Seca, FDA, FDN, Amido, Lignina.</li>
+                        <li>Proteína Bruta (PB), NDT, EE.</li>
+                        <li>Produção de leite/ha e leite/t de silagem.</li>
+                        <li>Relação C/N (Cobertura).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. TRL 6 e 7 -->
+    <div class="field-card">
+        <div class="field-card-header"><span class="icon">🌱</span> 5. Orientações Adicionais (TRL 6 e 7)</div>
+        <div class="field-card-body">
+            <p>Informações vitais para licenciamento:</p>
+            <ul class="check-list">
+                <li><strong>Produção de Sementes:</strong> Split (relação macho/fêmea), população recomendada e potencial produtivo.</li>
+                <li><strong>Estoques:</strong> Situação atual da cultivar e progenitores (disponibilidade imediata ou prazos).</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="highlight-box">
+        <p><strong>6. Orientação Final:</strong> As informações devem ser objetivas, sustentadas por dados (local, safra, testemunhas) e permitir a compreensão clara do desempenho e diferenciais do material.</p>
+    </div>
+
+    <div class="page-nav">
+      <button class="btn btn-secondary" onclick="goTo(7)">← Anterior</button>
+      <div class="nav-center"><span class="page-indicator">Página 9 de 11</span></div>
+      <button class="btn btn-primary" onclick="goTo(9)">Próximo →</button>
+    </div>
+</section>
+    <section class="page" id="page-9">
+<div class="chapter-badge"><div class="chapter-badge-line"></div>Capítulo 5</div>
+<h1>Fluxo de Finalização e Envio</h1>
+<p class="page-subtitle">O que fazer ao concluir o preenchimento das suas abas</p>
+
+<div class="step-list">
+  <div class="step-item">
+    <div class="step-num">1</div>
+    <div class="step-content">
+      <strong>Qualificador e pesquisador notificam o gestor de ativos</strong>
+      <p>Ao concluir o preenchimento das suas respectivas abas, tanto o qualificador quanto o pesquisador devem avisar o gestor de ativos da UD — por e-mail de preferência (julia.resende@embrapa.com.br). Não é necessário nenhum procedimento especial para salvar a planilha — basta fechar o arquivo.</p>
+    </div>
+  </div>
+  <div class="step-item">
+    <div class="step-num">2</div>
+    <div class="step-content">
+      <strong>Gestor de Ativos da UD verifica o preenchimento</strong>
+      <p>O gestor vai revisar se todos os campos obrigatórios foram preenchidos ou justificados. Caso identifique lacunas, retorna ao responsável pelo campo para complementação. Fique de olho em seu e-mail.</p>
+    </div>
+  </div>
+  <div class="step-item">
+    <div class="step-num">3</div>
+    <div class="step-content">
+      <strong>Exportação do PDF e envio ao pesquisador</strong>
+      <p>Após validação, o gestor irá exportar a planilha em PDF e enviar ao líder técnico/pesquisador responsável pelo ativo, que usará tal documento como comprovante de entrega da qualificação.</p>
+    </div>
+  </div>
+  <div class="step-item">
+    <div class="step-num">4</div>
+    <div class="step-content">
+      <strong>Inserção no Gestec</strong>
+      <p>Com a aprovação pelo CTI de resultado alcançado, o gestor de ativos utilizará as informações da planilha para inserir a qualificação no Gestec, sistema institucional de gestão de portfólio da Embrapa.</p>
+    </div>
+  </div>
+</div>
+
+<div class="callout atencao">
+  <div class="callout-icon">⚠️</div>
+  <div class="callout-body">
+    <div class="callout-title">Atenção</div>
+    A inserção no Gestec é de <strong>responsabilidade exclusiva do gestor de ativos da UD</strong> — qualificador e pesquisador não precisam realizar nenhuma ação direta nesta etapa. Apenas prestar algum auxílio, se for o caso.
+  </div>
+</div>
+
+<div class="callout dica">
+  <div class="callout-icon">💡</div>
+  <div class="callout-body">
+    <div class="callout-title">Sobre o salvamento automático</div>
+    Não é necessário nenhum procedimento especial para salvar — basta fechar o arquivo. Todas as alterações ficam registradas automaticamente.
+  </div>
+</div>
+
+<div class="page-nav">
+  <button class="btn btn-secondary" onclick="goTo(7)">← Anterior</button>
+  <div class="nav-center"><span class="page-indicator">Capítulo 5 de 6</span></div>
+  <button class="btn btn-primary" onclick="goTo(9)">Último capítulo →</button>
+</div>
+</section>
+    
+<section class="page" id="page-10">
 <div class="chapter-badge"><div class="chapter-badge-line"></div>Capítulo 7</div>
     <h1 class="">Contatos e Suporte</h1>
     <p class="page-subtitle">Em caso de dúvida, consulte primeiro as orientações da planilha e deste manual. Se a dúvida persistir, acione o contato adequado abaixo.</p>
@@ -1403,7 +1682,7 @@ a:hover { color: var(--green-dark); }
 
 <script>
 
-const totalPages = 10;
+const totalPages = 11; // Mudou de 10 para 11
 const chapters = [
   { label: 'Capa', icon: '🏠' },
   { label: 'Sumário', icon: '📋' },
@@ -1413,11 +1692,25 @@ const chapters = [
   { label: '4. Como Usar', icon: '04' },
   { label: '5a. Caracterização', icon: '5a' },
   { label: '5b. Alcance', icon: '5b' },
+  { label: '5b.1 Cultivares', icon: '5b.1' }, // Nova aba inserida aqui
   { label: '6. Finalização', icon: '06' },
   { label: '7. Contatos', icon: '07' },
 ];
 let current = 0;
-
+  
+function toggleCultivarAccordion(element) {
+    const content = element.nextElementSibling;
+    const arrow = element.querySelector('span');
+    
+    element.classList.toggle('active');
+    if (content.style.display === "block") {
+        content.style.display = "none";
+        arrow.innerText = "▼";
+    } else {
+        content.style.display = "block";
+        arrow.innerText = "▲";
+    }
+}
 function buildSidebar() {
   const nav = document.getElementById('sidebarNav');
   chapters.forEach((ch, i) => {
