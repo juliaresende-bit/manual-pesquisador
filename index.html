@@ -1583,32 +1583,207 @@ a:hover { color: var(--green-dark); }
             </style>
 
             <!-- TABELA VISUAL DE DOENÇAS E PRAGAS -->
-            <div class="pragas-table-wrapper">
-                <table class="pragas-table">
-                    <thead>
-                        <tr>
-                            <th>Doença / Praga</th>
-                            <th>Safra</th>
-                            <th>2ª Safra</th>
-                            <th>Por Local</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td><span class="pest-name">Antracnose</span><span class="scientific-name">C. graminicola</span></td><td data-label="Safra">Informar reação</td><td data-label="2ª Safra">Informar reação</td><td data-label="Por Local">Se aplicável</td></tr>
-                        <tr><td><span class="pest-name">Ferrugem</span><span class="scientific-name">Puccinia sorghi</span></td><td data-label="Safra">Informar reação</td><td data-label="2ª Safra">Informar reação</td><td data-label="Por Local">Se aplicável</td></tr>
-                        <tr><td><span class="pest-name">Helmintosporiose</span><span class="scientific-name">Exserohilum tursicum</span></td><td data-label="Safra">Informar reação</td><td data-label="2ª Safra">Informar reação</td><td data-label="Por Local">Se aplicável</td></tr>
-                        <tr><td><span class="pest-name">Cercosporiose</span><span class="scientific-name">Cercospora sorghi</span></td><td data-label="Safra">Informar reação</td><td data-label="2ª Safra">Informar reação</td><td data-label="Por Local">Se aplicável</td></tr>
-                        <tr><td><span class="pest-name">Mancha zonada</span><span class="scientific-name">Gloeocercospora sorghi</span></td><td data-label="Safra">Informar reação</td><td data-label="2ª Safra">Informar reação</td><td data-label="Por Local">Se aplicável</td></tr>
-                        <tr><td><span class="pest-name">Míldio sistêmico</span><span class="scientific-name">Peronosclerospora sorghi</span></td><td data-label="Safra">Informar reação</td><td data-label="2ª Safra">Informar reação</td><td data-label="Por Local">Se aplicável</td></tr>
-                        <tr><td><span class="pest-name">Vírus do mosaico da cana</span><span class="scientific-name">VMCA</span></td><td data-label="Safra">Informar reação</td><td data-label="2ª Safra">Informar reação</td><td data-label="Por Local">Se aplicável</td></tr>
-                        <tr><td><span class="pest-name">Podridão vermelha</span><span class="scientific-name">Fusarium moniliforme</span></td><td data-label="Safra">Informar reação</td><td data-label="2ª Safra">Informar reação</td><td data-label="Por Local">Se aplicável</td></tr>
-                        <tr><td><span class="pest-name">Podridão seca</span><span class="scientific-name">Macrophomina phaseolina</span></td><td data-label="Safra">Informar reação</td><td data-label="2ª Safra">Informar reação</td><td data-label="Por Local">Se aplicável</td></tr>
-                        <tr><td><span class="pest-name">Nematoides</span><span class="scientific-name">mínimo Pratylenchus</span></td><td data-label="Safra">Informar reação</td><td data-label="2ª Safra">Informar reação</td><td data-label="Por Local">Se aplicável</td></tr>
-                        <tr><td><span class="pest-name">Pulgão</span><span class="scientific-name">-</span></td><td data-label="Safra">Informar reação</td><td data-label="2ª Safra">Informar reação</td><td data-label="Por Local">Se aplicável</td></tr>
-                        <tr><td><span class="pest-name">Broca do colmo</span><span class="scientific-name">Diathrea sp.</span></td><td data-label="Safra">Informar reação</td><td data-label="2ª Safra">Informar reação</td><td data-label="Por Local">Se aplicável</td></tr>
-                    </tbody>
-                </table>
-            </div>
+            <!-- Tabela visual: Reação a pragas e doenças -->
+<div style="margin: 24px 0;">
+
+  <div style="border-left: 4px solid #1a5c3a; padding: 10px 16px; margin-bottom: 20px; background: #f0f5eb; border-radius: 0 8px 8px 0;">
+    <p style="font-size: 12px; font-weight: 700; color: #1a5c3a; margin: 0 0 5px; text-transform: uppercase; letter-spacing: 0.05em;">
+      Reação a pragas, doenças e adversidades
+    </p>
+    <p style="font-size: 13px; color: #2c2c2a; margin: 0; line-height: 1.6;">
+      Para cada item aplicável, informe a classificação da cultivar, como
+      <strong>resistente, tolerante, moderadamente tolerante, moderadamente suscetível ou suscetível</strong>,
+      conforme a metodologia adotada.
+    </p>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; align-items: start;">
+
+    <!-- MILHO -->
+    <div style="border: 1px solid #d8dfd5; border-radius: 10px; overflow: hidden; background: #ffffff;">
+      
+      <div style="background: #1a5c3a; padding: 12px 16px;">
+        <h3 style="color: #ffffff; margin: 0; font-size: 16px;">🌽 Milho</h3>
+      </div>
+
+      <div style="padding: 16px; font-size: 13px; line-height: 1.6; color: #2c2c2a;">
+        
+        <strong>Doenças</strong>
+        <ul style="padding-left: 18px; margin-top: 8px;">
+          <li>Antracnose de colmo — <em>Colletotrichum graminicola</em></li>
+          <li>Ferrugem comum — <em>Puccinia sorghi</em></li>
+          <li>Mancha foliar de Helminthosporium — <em>Exserohilum tursicum</em></li>
+          <li>Pinta branca — <em>Phaeosphaeria maydis</em></li>
+          <li>Ferrugem polisora — <em>Puccinia polysora</em></li>
+          <li>Ferrugem branca — <em>Physopella zeae</em></li>
+          <li>Complexo Enfezamento do milho (“Corn stunt”)</li>
+          <li><em>Diplodia maydis</em></li>
+          <li>Fusariose — <em>Fusarium moniliforme</em></li>
+          <li><em>Gibberella zeae</em></li>
+          <li>Outras doenças relevantes</li>
+        </ul>
+
+        <strong>Nematoides</strong>
+        <ul style="padding-left: 18px; margin-top: 8px;">
+          <li><em>Pratylenchus</em> — safra</li>
+          <li><em>Pratylenchus</em> — 2ª safra</li>
+          <li><em>Pratylenchus</em> — por local, quando aplicável</li>
+        </ul>
+
+        <strong>Pragas</strong>
+        <p style="margin-top: 6px;">
+          Apresentar indicadores de resistência/tolerância, como
+          <em>Spodoptera</em>, <em>Elasmopalpus</em>, <em>Diatraea</em>, entre outras.
+        </p>
+
+        <strong>Adversidades</strong>
+        <p style="margin-top: 6px;">
+          Apresentar indicadores de tolerância a condições como seca,
+          salinidade, toxicidade de alumínio, frio, entre outras.
+        </p>
+
+        <strong>Herbicidas/pesticidas</strong>
+        <p style="margin-top: 6px;">
+          Informar reações relevantes, quando aplicável.
+        </p>
+
+      </div>
+    </div>
+
+
+    <!-- MILHETO -->
+    <div style="border: 1px solid #d8dfd5; border-radius: 10px; overflow: hidden; background: #ffffff;">
+      
+      <div style="background: #3f7657; padding: 12px 16px;">
+        <h3 style="color: #ffffff; margin: 0; font-size: 16px;">🌾 Milheto</h3>
+      </div>
+
+      <div style="padding: 16px; font-size: 13px; line-height: 1.6; color: #2c2c2a;">
+
+        <strong>Doenças</strong>
+        <ul style="padding-left: 18px; margin-top: 8px;">
+          <li>Antracnose — <em>Colletotrichum graminicola</em></li>
+          <li>Ferrugem — <em>Puccinia sorghi</em></li>
+          <li>Helmintosporiose — <em>Exserohilum tursicum</em></li>
+          <li>Cercosporiose — <em>Cercospora sorghi</em></li>
+          <li>Mancha zonada — <em>Gloeocercospora sorghi</em></li>
+          <li>Míldio sistêmico — <em>Peronosclerospora sorghi</em></li>
+          <li>Vírus do mosaico da cana (VMCA)</li>
+          <li>Podridão vermelha — <em>Fusarium moniliforme</em></li>
+          <li>Podridão seca — <em>Macrophomina phaseolina</em></li>
+          <li>Outras doenças relevantes</li>
+        </ul>
+
+        <strong>Nematoides</strong>
+        <ul style="padding-left: 18px; margin-top: 8px;">
+          <li><em>Pratylenchus</em> — safra</li>
+          <li><em>Pratylenchus</em> — 2ª safra</li>
+          <li><em>Pratylenchus</em> — por local, quando aplicável</li>
+        </ul>
+
+        <div style="background: #f5f7f3; padding: 10px; border-radius: 6px; margin-top: 12px;">
+          <strong style="font-size: 12px;">Avaliação das doenças</strong>
+          <p style="margin: 5px 0 0; font-size: 12px;">
+            Considerar avaliação a campo, preferencialmente por infecção natural,
+            conforme a metodologia definida para cada doença.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- SORGO -->
+    <div style="border: 1px solid #d8dfd5; border-radius: 10px; overflow: hidden; background: #ffffff;">
+      
+      <div style="background: #6b8060; padding: 12px 16px;">
+        <h3 style="color: #ffffff; margin: 0; font-size: 16px;">🌱 Sorgo</h3>
+      </div>
+
+      <div style="padding: 16px; font-size: 13px; line-height: 1.6; color: #2c2c2a;">
+
+        <strong>Doenças</strong>
+
+        <ul style="padding-left: 18px; margin-top: 8px;">
+          <li>
+            <strong>Antracnose</strong> — <em>C. graminicola</em><br>
+            Safra, 2ª safra e por local, quando aplicável.
+          </li>
+
+          <li>
+            <strong>Ferrugem</strong> — <em>Puccinia sorghi</em><br>
+            Safra, 2ª safra e por local, quando aplicável.
+          </li>
+
+          <li>
+            <strong>Helmintosporiose</strong> — <em>Exserohilum tursicum</em><br>
+            Safra, 2ª safra e por local, quando aplicável.
+          </li>
+
+          <li>
+            <strong>Cercosporiose</strong> — <em>Cercospora sorghi</em><br>
+            Safra, 2ª safra e por local, quando aplicável.
+          </li>
+
+          <li>
+            <strong>Mancha zonada</strong> — <em>Gloeocercospora sorghi</em><br>
+            Safra, 2ª safra e por local, quando aplicável.
+          </li>
+
+          <li>
+            <strong>Míldio sistêmico</strong> — <em>Peronosclerospora sorghi</em><br>
+            Safra, 2ª safra e por local, quando aplicável.
+          </li>
+
+          <li>
+            <strong>Vírus do mosaico da cana (VMCA)</strong><br>
+            Safra, 2ª safra e por local, quando aplicável.
+          </li>
+
+          <li>
+            <strong>Podridão vermelha</strong> — <em>Fusarium moniliforme</em><br>
+            Safra, 2ª safra e por local, quando aplicável.
+          </li>
+
+          <li>
+            <strong>Podridão seca</strong> — <em>Macrophomina phaseolina</em><br>
+            Safra, 2ª safra e por local, quando aplicável.
+          </li>
+        </ul>
+
+        <strong>Nematoides</strong>
+        <ul style="padding-left: 18px; margin-top: 8px;">
+          <li><em>Pratylenchus</em> — safra</li>
+          <li><em>Pratylenchus</em> — 2ª safra</li>
+          <li><em>Pratylenchus</em> — por local, quando aplicável</li>
+        </ul>
+
+        <strong>Pragas</strong>
+        <ul style="padding-left: 18px; margin-top: 8px;">
+          <li>Pulgão — safra, 2ª safra e por local, quando aplicável</li>
+          <li>Broca do colmo — <em>Diatraea</em> sp. — safra, 2ª safra e por local, quando aplicável</li>
+        </ul>
+
+        <strong>Outras relevantes</strong>
+        <p style="margin-top: 6px;">
+          Incluir outras doenças ou pragas relevantes identificadas durante as avaliações.
+        </p>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Orientação final -->
+  <div style="margin-top: 16px; padding: 10px 14px; background: #f5f7f3; border-radius: 8px;">
+    <p style="font-size: 12.5px; color: #2c2c2a; margin: 0; line-height: 1.6;">
+      <strong>Metodologia:</strong> apresentar a metodologia Embrapa utilizada para avaliação
+      e categorização das cultivares, indicando, quando aplicável, a classificação por
+      <strong>doença, praga, situação, safra e local</strong>.
+    </p>
+  </div>
+
+</div>
 
             <!-- CARDS DE COMPLEMENTAÇÃO -->
             <div class="cultivar-grid" style="grid-template-columns: 1fr;">
@@ -1622,7 +1797,6 @@ a:hover { color: var(--green-dark); }
                     <ul class="check-list" style="font-size:13px;">
                         <li><strong>Reação a adversidades:</strong> seca, salinidade, toxicidade de alumínio e frio.</li>
                         <li><strong>Reação a herbicidas/pesticidas:</strong> destacar tolerâncias ou sensibilidades específicas.</li>
-                        <li><strong>Metodologia:</strong> descrever a metodologia Embrapa utilizada para avaliação e categorização.</li>
                     </ul>
                 </div>
             </div>
