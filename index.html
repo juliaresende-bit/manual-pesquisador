@@ -1491,7 +1491,7 @@ a:hover { color: var(--green-dark); }
         </div>
     </div>
 
-    <!-- 3. RESULTADOS E DISCUSSÃO -->
+<!-- 3. RESULTADOS E DISCUSSÃO -->
     <h2>3. Orientações para "Resultados e Discussão" - opcionais</h2>
     <p>Como forma complementar ao texto de Resultados e Discussão, sugere-se destacar características específicas da cultivar, diferenças entre safras, locais e o posicionamento do material, conforme tópicos abaixo:</p>
 
@@ -1499,31 +1499,38 @@ a:hover { color: var(--green-dark); }
         <div class="accordion-header" onclick="toggleCultivarAccordion(this)">
             3.1 Características Agronômicas <span>▼</span>
         </div>
-        <div class="accordion-content"> <!-- CORREÇÃO: Adicionado o wrapper aqui -->
+        <div class="accordion-content">
             <div class="cultivar-grid" style="grid-template-columns: 1fr;">
-              <!-- BLOCO: Performance -->
+                
+                <!-- BLOCO: Performance -->
                 <div class="inner-card" style="margin-bottom: 15px; border-left: 4px solid var(--green-light);">
                     <h4><span class="icon">📏</span> Performance</h4>
                     <p style="font-size: 14px; color: var(--text-mid);">Comparação com testemunhas comerciais relevantes.</p>     
+                </div> <!-- CORREÇÃO: Faltava fechar este bloco -->
+
                 <!-- BLOCO: Época de Plantio -->
                 <div class="inner-card" style="margin-bottom: 15px; border-left: 4px solid var(--green-light);">
                     <h4><span class="icon">📏</span> Época de Plantio</h4>
                     <p style="font-size: 14px; color: var(--text-mid);">Indicação clara (Safra, 2ª Safra ou ambas).</p>  
-                  <!-- BLOCO: Stand -->
+                </div> <!-- CORREÇÃO: Faltava fechar este bloco -->
+
+                <!-- BLOCO: Stand -->
                 <div class="inner-card" style="margin-bottom: 15px; border-left: 4px solid var(--green-light);">
                     <h4><span class="icon">📏</span> Stand</h4>
                     <p style="font-size: 14px; color: var(--text-mid);">População recomendada por hectare para cada safra e local.</p>  
                 </div>
-                    <!-- BLOCO: Produtividade -->
+
+                <!-- BLOCO: Produtividade -->
                 <div class="inner-card" style="margin-bottom: 15px; border-left: 4px solid var(--green-light);">
                     <h4><span class="icon">📏</span> Produtividade (conforme uso)</h4>
                     <p style="font-size: 14px; color: var(--text-mid);">Informe:.</p>  
-                  <ul class="check-list">
+                    <ul class="check-list">
                         <li><strong>Grãos: Kg/ha - corrigidos para 13% de umidade.</strong></li>
                         <li><strong>Silagem: Massa verde e matéria seca em kg/ha</strong></li>
-                    <li><strong>Outros:</strong></li>
+                        <li><strong>Outros:</strong></li>
                     </ul>
                 </div>
+
                 <!-- BLOCO: ALTURA DE PLANTAS -->
                 <div class="inner-card" style="margin-bottom: 15px; border-left: 4px solid var(--green-light);">
                     <h4><span class="icon">📏</span> Altura de Plantas</h4>
@@ -1570,8 +1577,8 @@ a:hover { color: var(--green-dark); }
                     </ul>
                 </div>
             </div>
-        </div> <!-- CORREÇÃO: Fechamento do content -->
-    </div> <!-- CORREÇÃO: Fechamento do accordion -->
+        </div>
+    </div>
 
     
     <!-- 3.2 Reação a Pragas, Doenças e Adversidades -->
@@ -1590,7 +1597,6 @@ a:hover { color: var(--green-dark); }
                 .pest-name { font-weight: 700; color: var(--green-dark); display: block; }
                 .scientific-name { font-style: italic; color: var(--text-light); font-size: 11px; }
                 
-                /* Estilo responsivo para a tabela de pragas */
                 @media (max-width: 600px) {
                     .pragas-table thead { display: none; }
                     .pragas-table tr { display: block; margin-bottom: 15px; border-bottom: 2px solid var(--green-light); }
