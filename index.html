@@ -1802,53 +1802,59 @@ a:hover { color: var(--green-dark); }
 </div> <!-- Fecha o conteúdo do acordeão (accordion-content) -->
 </div> <!-- ESTA É A LINHA QUE VOCÊ DEVE ADICIONAR (Fecha o caixote do 3.3) -->
           
-    <!-- 4. FINALIDADE -->
-<div style="margin-top:40px;">
-    <h2>4. Avaliações Complementares por Finalidade</h2>
-    <p style="margin-bottom: 20px;">Além das características agronômicas gerais, devem ser apresentados resultados específicos relacionados à finalidade de uso da cultivar:</p>
-
-    <div class="cultivar-grid">
-        <div class="inner-card" style="border-left: 4px solid var(--green-light);">
-            <h4><span class="icon">🌾</span> Granífero</h4>
-            <p style="font-size:13px; color: var(--text-mid);">Descrever resultados dos ensaios para <strong>alimentação humana</strong> ou atributos de qualidade relevantes para <strong>bioetanol</strong>.</p>
+   <!-- 3.3 Avaliações Complementares por Finalidade -->
+    <div class="cultivar-accordion">
+        <div class="accordion-header" onclick="toggleCultivarAccordion(this)">
+            3.3 Avaliações Complementares por Finalidade <span>▼</span>
         </div>
+        <div class="accordion-content">
+            <p style="margin-bottom: 20px;">Além das características agronômicas gerais, devem ser apresentados resultados específicos relacionados à finalidade de uso da cultivar:</p>
 
-        <div class="inner-card" style="border-left: 4px solid var(--green-light);">
-    <h4><span class="icon">🐄</span> Forrageiro (Múltiplas Finalidades)</h4>
-<div style="font-size:12px; color: var(--text-mid); padding-left: 5px;">
-    
-    <!-- Silagem e Bioenergia -->
-    <p style="margin: 8px 0 3px 0; color: var(--green-dark); font-size:11px;">
-        <strong>• Silagem e Bioenergia</strong>
-    </p>
-    <ul class="check-list" style="margin-bottom: 10px;">
-        <li><strong>Bromatologia:</strong> Matéria Seca (%), FDA, FDN, Amido, Lignina, Hemicelulose, PB (%), NDT e EE.</li>
-        <li><strong>Exclusivo Silagem:</strong> Leite/t de silagem (Milk, 2006), Leite/ha e Capacidade de rebrota.</li>
-    </ul>
+            <div class="cultivar-grid">
+                <!-- Bloco Granífero -->
+                <div class="inner-card" style="border-left: 4px solid var(--green-light); margin-bottom: 15px;">
+                    <h4><span class="icon">🌾</span> Granífero</h4>
+                    <p style="font-size:13px; color: var(--text-mid);">Descrever resultados dos ensaios para <strong>alimentação humana</strong> ou atributos de qualidade relevantes para <strong>bioetanol</strong>.</p>
+                </div>
 
-    <!-- Corte e Pastejo -->
-    <p style="margin: 8px 0 3px 0; color: var(--green-dark); font-size:11px;">
-        <strong>• Corte e Pastejo</strong>
-    </p>
-    <ul class="check-list" style="margin-bottom: 10px;">
-        <li><strong>Manejo:</strong> Densidade/população, Altura de entrada, Dias para pastoreio e Rebrota/perfilhamento.</li>
-        <li><strong>Produtividade:</strong> PMV (Matéria Verde) e PMS (Matéria Seca) no momento do pastoreio.</li>
-    </ul>
+                <!-- Bloco Forrageiro -->
+                <div class="inner-card" style="border-left: 4px solid var(--green-light);">
+                    <h4><span class="icon">🐄</span> Forrageiro (Múltiplas Finalidades)</h4>
+                    <div style="font-size:12px; color: var(--text-mid); padding-left: 5px;">
+                        
+                        <!-- Silagem e Bioenergia -->
+                        <p style="margin: 8px 0 3px 0; color: var(--green-dark); font-size:11px;">
+                            <strong>• Silagem e Bioenergia</strong>
+                        </p>
+                        <ul class="check-list" style="margin-bottom: 10px;">
+                            <li><strong>Bromatologia:</strong> Matéria Seca (%), FDA, FDN, Amido, Lignina, Hemicelulose, PB (%), NDT e EE.</li>
+                            <li><strong>Exclusivo Silagem:</strong> Leite/t de silagem (Milk, 2006), Leite/ha e Capacidade de rebrota.</li>
+                        </ul>
 
-    <!-- Cobertura e Queima -->
-    <p style="margin: 8px 0 3px 0; color: var(--green-dark); font-size:11px;">
-        <strong>• Cobertura (SPD) e Queima</strong>
-    </p>
-    <ul class="check-list">
-        <li><strong>Palhada/SPD:</strong> Relação C/N (Carbono/Nitrogênio).</li>
-        <li><strong>Queima/Alimentação:</strong> Proteína (%), Amido (%) e Teor de Tanino (mg CE/g MS).</li>
-    </ul>
+                        <!-- Corte e Pastejo -->
+                        <p style="margin: 8px 0 3px 0; color: var(--green-dark); font-size:11px;">
+                            <strong>• Corte e Pastejo</strong>
+                        </p>
+                        <ul class="check-list" style="margin-bottom: 10px;">
+                            <li><strong>Manejo:</strong> Densidade/população, Altura de entrada, Dias para pastoreio e Rebrota/perfilhamento.</li>
+                            <li><strong>Produtividade:</strong> PMV (Matéria Verde) e PMS (Matéria Seca) no momento do pastoreio.</li>
+                        </ul>
 
-</div>
-</div>
-</div>
+                        <!-- Cobertura e Queima -->
+                        <p style="margin: 8px 0 3px 0; color: var(--green-dark); font-size:11px;">
+                            <strong>• Cobertura (SPD) e Queima</strong>
+                        </p>
+                        <ul class="check-list">
+                            <li><strong>Palhada/SPD:</strong> Relação C/N (Carbono/Nitrogênio).</li>
+                            <li><strong>Queima/Alimentação:</strong> Proteína (%), Amido (%) e Teor de Tanino (mg CE/g MS).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- 5. TRL 6 e 7 -->
+    <!-- 4. TRL 6 e 7 -->
     <div style="margin-top:40px;">
         <h2>5. Orientações Adicionais (TRL 6 e 7)</h2>
         <p style="margin-bottom: 20px;">Informações vitais para licenciamento:</p>
