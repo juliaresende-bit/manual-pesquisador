@@ -1486,8 +1486,6 @@ a:hover { color: var(--green-dark); }
 </li>
                 <li>Sorgo: Registro autorizado apenas com protocolo de proteção das linhagens R e B.
 </li>
-                <li>A proteção de todos os progenitores é obrigatória em caso de licenciamento onde a  responsabilidade de produção de progenitores é da empresa licenciada (Ex. BRS 3042 Pro2 Semeali);
-</li>
               <li>O melhorista deve indicar o progenitor a ser protegido via e-mail ao CLPI.</li>
             </ul>
         </div>
@@ -1503,10 +1501,33 @@ a:hover { color: var(--green-dark); }
         </div>
         <div class="accordion-content"> <!-- CORREÇÃO: Adicionado o wrapper aqui -->
             <div class="cultivar-grid" style="grid-template-columns: 1fr;">
+              <!-- BLOCO: Performance -->
+                <div class="inner-card" style="margin-bottom: 15px; border-left: 4px solid var(--green-light);">
+                    <h4><span class="icon">📏</span> Performance</h4>
+                    <p style="font-size: 14px; color: var(--text-mid);">Comparação com testemunhas comerciais relevantes.</p>     
+                <!-- BLOCO: Época de Plantio -->
+                <div class="inner-card" style="margin-bottom: 15px; border-left: 4px solid var(--green-light);">
+                    <h4><span class="icon">📏</span> Época de Plantio</h4>
+                    <p style="font-size: 14px; color: var(--text-mid);">Indicação clara (Safra, 2ª Safra ou ambas).</p>  
+                  <!-- BLOCO: Stand -->
+                <div class="inner-card" style="margin-bottom: 15px; border-left: 4px solid var(--green-light);">
+                    <h4><span class="icon">📏</span> Stand</h4>
+                    <p style="font-size: 14px; color: var(--text-mid);">População recomendada por hectare para cada safra e local.</p>  
+                </div>
+                    <!-- BLOCO: Produtividade -->
+                <div class="inner-card" style="margin-bottom: 15px; border-left: 4px solid var(--green-light);">
+                    <h4><span class="icon">📏</span> Produtividade (conforme uso)</h4>
+                    <p style="font-size: 14px; color: var(--text-mid);">Informe:.</p>  
+                  <ul class="check-list">
+                        <li><strong>Grãos: Kg/ha - corrigidos para 13% de umidade.</strong></li>
+                        <li><strong>Silagem: Massa verde e matéria seca em kg/ha</strong></li>
+                    <li><strong>Outros:</strong></li>
+                    </ul>
+                </div>
                 <!-- BLOCO: ALTURA DE PLANTAS -->
                 <div class="inner-card" style="margin-bottom: 15px; border-left: 4px solid var(--green-light);">
                     <h4><span class="icon">📏</span> Altura de Plantas</h4>
-                    <p style="font-size: 14px; color: var(--text-mid);">Informar a altura média (cm). Havendo diferenças relevantes entre locais ou condições de cultivo, estas devem ser discutidas.</p>
+                    <p style="font-size: 14px; color: var(--text-mid);">Informar a altura média (cm). Havendo diferenças relevantes entre locais, épocas ou condições de cultivo, estas devem ser discutidas.</p>
                     <ul class="check-list">
                         <li><strong>Altura de plantas – safra (cm)</strong></li>
                         <li><strong>Altura de plantas – 2ª safra (cm)</strong></li>
@@ -1516,7 +1537,7 @@ a:hover { color: var(--green-dark); }
                 <!-- BLOCO: ACAMAMENTO E TOMBAMENTO -->
                 <div class="inner-card" style="margin-bottom: 15px; border-left: 4px solid var(--green-light);">
                     <h4><span class="icon">📉</span> Acamamento e Tombamento</h4>
-                    <p style="font-size: 14px; color: var(--text-mid);">Classificar a reação comparando com testemunhas. Indicar o critério (Resistente, Tolerante ou Suscetível).</p>
+                    <p style="font-size: 14px; color: var(--text-mid);">Indicar o critério (Resistente, Tolerante ou Suscetível).</p>
                     <ul class="check-list">
                         <li><strong>Acamamento/tombamento – safra e 2ª safra</strong></li>
                         <li><strong>% de plantas acamadas e quebradas</strong></li>
@@ -1524,7 +1545,7 @@ a:hover { color: var(--green-dark); }
                 </div>
 
                 <!-- BLOCO: SENSIBILIDADE AO FOTOPERÍODO -->
-                <div class="inner-card" style="margin-bottom: 15px; border-left: 4px solid var(--amber); background-color: var(--amber-light);">
+                <div class="inner-card" style="margin-bottom: 15px; border-left: 4px solid var(--amber); background-color: var(--green-light);">
                     <h4><span class="icon">☀️</span> Sensibilidade ao Fotoperíodo – Sorgo</h4>
                     <p style="font-size: 14px; color: var(--text-mid);">Para cultivares de <strong>sorgo</strong>, informar se é sensível ou insensível em diferentes safras/locais.</p>
                 </div>
@@ -1552,23 +1573,11 @@ a:hover { color: var(--green-dark); }
         </div> <!-- CORREÇÃO: Fechamento do content -->
     </div> <!-- CORREÇÃO: Fechamento do accordion -->
 
+    
+    <!-- 3.2 Reação a Pragas, Doenças e Adversidades -->
     <div class="cultivar-accordion">
         <div class="accordion-header" onclick="toggleCultivarAccordion(this)">
-            3.2 População e Produção de Forragem <span>▼</span>
-        </div>
-        <div class="accordion-content">
-            <ul class="check-list">
-                <li><strong>Stand:</strong> População recomendada por hectare para cada safra e local.</li>
-                <li><strong>Potencial de Rebrota:</strong> Obrigatório para forrageiras informar o potencial (Safra/2ª Safra).</li>
-                <li><strong>Produtivo:</strong> Massa verde e matéria seca em kg/ha.</li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- 3.3 Reação a Pragas, Doenças e Adversidades -->
-    <div class="cultivar-accordion">
-        <div class="accordion-header" onclick="toggleCultivarAccordion(this)">
-            3.3 Reação a Pragas, Doenças e Adversidades <span>▼</span>
+            3.2 Reação a Pragas, Doenças e Adversidades <span>▼</span>
         </div>
         <div class="accordion-content">
             <p style="margin-bottom: 15px;">Apresentar a reação da cultivar (Resistente, Tolerante, Moderadamente Tolerante, Moderadamente Suscetível, Suscetível) acompanhada dos resultados e metodologia Embrapa utilizada.</p>
